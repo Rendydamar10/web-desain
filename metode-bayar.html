@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Bayar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Custom Dropdown Style */
+        .dropdown-menu {
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            /* Full width */
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+        }
+
+        .dropdown-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        .dropdown-divider {
+            margin: 0;
+        }
+
+        .dropdown-header {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        /* Customize button */
+        .btn-dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .btn-dropdown img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #F8F7F3 ; ">
+        <div class="container">
+            <a class="navbar-brand fw-bolder" href="index.html" style="color: #1F5673;">LoketKita
+                <img src="img/logo3.svg" alt="img-logo">
+            </a>
+            <button class="navbar-toggler bg-maincolor " style="background-color: #1f5673;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3 mt-2 ">
+                        <a class=" fw-semibold text-color-main" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3 mt-2">
+                        <a class=" fw-semibold fs-6 text-color-main" href="about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item mt-2 me-4">
+                        <a class="fw-semibold  text-color-main" href="pesan.html">Pesan</a>
+                    </li>
+
+                    <li class="nav-item mt-2 me-1 ">
+                        <a href="profile.html">
+
+                            <i class="fa-solid fa-circle-user text-color-main fs-4"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container d-flex justify-content-end   pt-3 " style="">
+
+        <i class="fa-solid fa-circle-check fs-4  mt-1  " style="color: #1F5673;"></i>
+
+        <a class="fw-semibold  text-color-main  mt-1  line-progres me-3
+        ">Pesan</a>
+
+        <div class="bg-maincolor rounded-circle  mt-1 z-3   " style="padding:0 6px;"> 2</div>
+
+        <a class="fw-semibold  text-color-main mt-1   me-3 line-progres ">Review</a>
+
+        <div class="bg-maincolor rounded-circle  mt-1 z-3   " style="padding:0 6px;"> 3</div>
+
+        <a class="fw-semibold line-progres mt-1 text-color-main me-3 ">Bayar</a>
+
+        <div class="bg-maincolor rounded-circle  mt-1 z-3   " style="padding:0 6px;"> 4</div>
+        <a class="fw-semibold  text-color-main mt-1">Review</a>
+    </div>
+
+    <!-- CONTENT -->
+
+    <h2 class="fw-bold m-5">Pilih Metode Pembayaran</h2>
+
+    <section class="container">
+
+        <div class="px-4 mb-5 py-3 m-auto bg-main-white rounded-2 border border-dark-subtle border-1"
+            style="max-width: 600px; ">
+            <h4 class="text-dark-emphasis fw-semibold">No Pesanan</h4>
+            <p class="fs-5 fw-medium">12345678</p>
+            <hr>
+            <h5 class="text-dark-emphasis">Detail Pemesanan</h5>
+            <h5 class="fw-semibold">Tiket Kereta Ekonomi Semarang &rarr; Yogyakarta</h5>
+            <div class="d-flex justify-content-between my-3">
+                <h5 class="text-dark-emphasis fs-5">Tanggal berangkat</h5>
+                <h5 class="">Rabu,18 Des 2024</h5>
+            </div>
+            <div class="d-flex justify-content-between">
+                <h5 class="text-dark-emphasis">Jumlah Penumpang</h5>
+                <h5 class="">1 Dewasa</h5>
+            </div>
+            <!-- Dropdown Button -->
+            <div class="dropdown w-75 my-2">
+                <!-- Button Dropdown -->
+                <button
+                    class="btn btn-light border-secondary btn-dropdown d-flex align-items-center justify-content-between px-2"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/CreditCard-icon.svg" id="selected-icon" alt="Selected Icon">
+                    <span id="selected-text">Transfer Bank</span>
+                    <i class="fa-solid fa-chevron-down ms-auto"></i>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item d-flex align-items-center" data-value="Bank BCA"
+                        data-icon="img/bca-icon.svg">
+                        <img src="img/bca-icon.svg" alt="BCA">
+                        <span>Bank BCA</span>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="dropdown-item d-flex align-items-center" data-value="Bank BRI"
+                        data-icon="img/bri-icon.svg">
+                        <img src="img/bri-icon.svg" alt="BRI">
+                        <span>Bank BRI</span>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="dropdown-item d-flex align-items-center" data-value="Bank Mandiri"
+                        data-icon="img/mandiri-icon.svg">
+                        <img src="img/mandiri-icon.svg" alt="Mandiri">
+                        <span>Bank Mandiri</span>
+                    </li>
+                </ul>
+            </div>
+
+            <h5 class="fw-semibold mb-3 mt-3">Rincian Harga</h5>
+            <div class="d-flex justify-content-between ">
+                <h5 class="fw-semibold">1x Tiket Kereta Ekonomi</h5>
+                <h5 class="fw-semibold">Rp 225.000</h5>
+            </div>
+
+            <p class="fw-medium mt-3"><input class="form-check-input border-secondary " type="checkbox" id="rememberMe">
+                Dengan mengklik
+                tombol ini, Anda
+                menyetujui <span class="text-primary"> Syarat & Ketentuan</span>dan<span class="text-primary"> Kebijakan
+                    Privasi</span>
+            </p>
+            <div class="text-end">
+
+                <a href="proses-transfer.html" class="btn-main  rounded-2">Confirm</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript untuk Mengganti Teks dan Ikon pada Tombol
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        const selectedText = document.getElementById('selected-text');
+        const selectedIcon = document.getElementById('selected-icon');
+
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const value = item.getAttribute('data-value'); // Ambil teks opsi
+                const icon = item.getAttribute('data-icon');   // Ambil URL ikon
+
+                // Update tombol dropdown
+                selectedText.textContent = value;
+                selectedIcon.src = icon;
+            });
+        });
+    </script>
+</body>
+
+</html>
